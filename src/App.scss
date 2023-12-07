@@ -1,0 +1,73 @@
+$color-blue: #88f;
+$color-white: #fff;
+
+html, body, #app {
+  height: 100%;
+}
+.harness-io {
+  background-size: auto;
+}
+
+.heading-container {
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  color: $color-white;
+  line-height: 3em;
+  .heading-title {
+    font-size: 3em;
+    .title-marked {
+      color: $color-blue;
+    }
+  }
+  .heading-subtitle {
+    font-size: 1em;
+  }
+  .heading-img {
+    height: 100%;
+    background-image: url('https://imgur.com/fA66Qlq.png');
+  }
+}
+
+.award-person-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.awarded-person {
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  line-height: 1.5em;
+  width: 200px;
+  img {
+    border-radius: 50%;
+    width: 8em;
+    height: 8em;
+    object-fit: cover;
+  }
+  .person-name {
+    font-weight: 700;
+    color: $color-blue;
+  }
+  .person-company {
+    font-weight: 400;
+    color: $color-white;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  .footer-marked {
+    color: $color-blue;
+  }
+  .footer-company {
+    color: $color-white;
+  }
+}
